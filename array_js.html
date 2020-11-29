@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array</title>
+</head>
+<body>
+	<h1>PRAKTIKUM ARRAY JAVASCRIPT</h1>
+	<p><b>Penggunaan Sort :</b> <span id="sort" /></p> <br/>
+	<p><b>Penggunaan Reverse :</b> <span id="reverse" /></p> <br/>
+	<p><b>Penggunaan Concat :</b> <span id="concat" /></p> <br/>
+	<p><b>Penggunaan Length pada id Matkul :</b> <span id="length" /></p> <br/>
+	<p><b>Penggunaan Join :</b> <span id="join" /></p>
+
+	<script>
+		
+		let matkulsisteminformasi = ["Bahasa Pemrograman", "Analisis & Desain Perangkat Lunak", "Interaksi Manusia & Komputer", "Desain Basis Data"];
+		let matkulmanajemen = ["Pengantar Akuntansi", "Perpajakan", "Manajemen Perbankan", "Manajemen Produk Dan Merek"];
+		let jadwal = matkulsisteminformasi.concat(matkulmanajemen);
+
+		// Penggunaan Sort
+		document.getElementById('sort').innerHTML = matkulsisteminformasi.sort();
+
+		// Penggunaan Reverse
+		document.getElementById('reverse').innerHTML = matkulsisteminformasi.reverse();
+
+		// Penggunaan concat
+		document.getElementById('concat').innerHTML = jadwal;
+
+		// Penggunaan Length
+		document.getElementById('length').innerHTML = jadwal.length;
+
+		// Penggunaan Join
+		document.getElementById('join').innerHTML = jadwal.join(" | ");
+	</script>
+</body>
+</html>
